@@ -4,11 +4,12 @@ const elementParent = document.querySelector('div[data-id="captionsComponent"]')
 // Array to store captured text
 const capturedText = [];
 
-// Utility function to extract and clean text content
+// Clean text content
 function getCleanText(parent) {
   return parent.innerText.trim();
 }
 
+// Start event observer
 if (typeof elementParent !== 'undefined' && elementParent instanceof HTMLElement) {
   let lastText = "";
 
